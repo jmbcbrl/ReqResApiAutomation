@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReqResApiAutomation", "ReqResApiAutomation\ReqResApiAutomation.csproj", "{37E6D04C-0F6E-476D-AA9E-26ED5F240C93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReqResApiServices", "ReqResApiServices\ReqResApiServices.csproj", "{7BBAD283-6685-4690-800E-5ED9A3FA3CAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37E6D04C-0F6E-476D-AA9E-26ED5F240C93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37E6D04C-0F6E-476D-AA9E-26ED5F240C93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37E6D04C-0F6E-476D-AA9E-26ED5F240C93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37E6D04C-0F6E-476D-AA9E-26ED5F240C93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BBAD283-6685-4690-800E-5ED9A3FA3CAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BBAD283-6685-4690-800E-5ED9A3FA3CAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BBAD283-6685-4690-800E-5ED9A3FA3CAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BBAD283-6685-4690-800E-5ED9A3FA3CAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3807B4D-F9B2-49AF-BB91-C04418B4917C}
+	EndGlobalSection
+EndGlobal

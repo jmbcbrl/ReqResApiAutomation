@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\GetUserTests - Copy.feature.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.5.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
+    <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.57" />
+    <PackageReference Include="SpecFlow.xUnit" Version="3.9.40" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3" />
+    <PackageReference Include="FluentAssertions" Version="6.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Drivers\" />
+    <Folder Include="Hooks\" />
+    <Folder Include="Support\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ReqResApiServices\ReqResApiServices.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Features\GetColorTests.feature.cs">
+      <DependentUpon>GetColorTests.feature</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <SpecFlowFeatureFiles Update="Features\GetColorTests.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+  </ItemGroup>
+
+</Project>
